@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator ( 1 July 2024 )</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bmi-content">
+        <h2>Body Mass Index (BMI) Calculator</h2>
+        <label for="height">Your Height (cm)</label>
+        <input
+          type="number"
+          class="height"
+          id="height"
+          value="150"
+          placeholder="Enter you height in cm"
+        />
+        <label for="weight">Your Weight (kg)</label>
+        <input
+          type="number"
+          class="weight"
+          id="weight"
+          value="50"
+          placeholder="Enter you weight in kg"
+        />
+        <button class="calculate-btn">Compute BMI</button>
+        <input class="bmi-number d-none" type="text" readonly value="" />
+        <p class="result"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

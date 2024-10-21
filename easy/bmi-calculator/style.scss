@@ -1,0 +1,107 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Utilities
+
+.d-none {
+  display: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.bmi-content {
+  max-width: 600px;
+  width: calc(100% - 38px);
+  margin: 35px auto;
+  padding: 35px 27px 37px 27px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+  // margin-top: 50vh;
+  // transform: translateY(-50%);
+}
+h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+  @media (max-width: 1199.98px) {
+    font-size: 25px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 24px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 23px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 22px;
+  }
+}
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: none;
+  /* Chrome, Safari, Edge, Opera */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  /* Firefox */
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.085);
+    border-radius: 3px;
+  }
+}
+
+.calculate-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #077af5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #0670e2;
+  }
+}
+
+.result {
+  margin-top: 22px;
+  font-size: 18px;
+  color: #333;
+  font-family: cursive;
+  font-weight: 700;
+}
+
+.bmi-number {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
