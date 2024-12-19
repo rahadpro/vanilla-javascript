@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock using html, scss and typescript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="text-open-sans">
+    <div class="container">
+        <div class="clock">
+          <h3
+            class="letter-spacing-4 text-center mb-5 text-white text-shadow-1"
+          >
+            Digital Clock
+          </h3>
+          <div class="clock__inner text-white d-grid">
+            <div class="hours d-grid">
+              <span
+                class="d-grid align-items-center justify-content-center  letter-spacing-2"
+              >
+                00
+              </span>
+              <span class="text-uppercase text-2 py-1 text-center"> hours </span>
+            </div>
+            <div class="minutes d-grid">
+              <span
+                class="d-grid align-items-center justify-content-center  letter-spacing-2"
+              >
+                00
+              </span>
+              <span class="text-uppercase text-2 py-1 text-center"> minutes </span>
+            </div>
+            <div class="seconds d-grid">
+              <span
+                class="d-grid align-items-center justify-content-center  letter-spacing-2"
+              >
+                00
+              </span>
+              <span class="text-uppercase text-2 py-1 text-center"> seconds </span>
+            </div>
+            <div class="ampm text-center py-little">
+              <span class="text-uppercase"> AM </span>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
